@@ -1,0 +1,219 @@
+
+h1 {
+
+}
+body {
+    background: #ffffffe2;
+    color: black;
+    font-family: 'Raleway', sans-serif; 
+   /* margin: 20px; 
+    padding: 0;
+    position: relative; */
+}
+#header {
+    background: #ffffff;
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+   }
+
+@media (max-width: 600px) {
+    header {
+      flex-wrap: wrap;
+    }
+  }
+#company-name {
+    font-weight: bold;
+    font-size: larger;
+    color: darkslateblue;
+    padding: 0px 18px;
+    margin: 0.5em 0;
+}
+.site-logo {
+    display: inline-flex;
+    flex:1;
+    margin-top: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+
+#header-img {
+    min-height: 45px;
+    max-height: 100px;   
+}
+
+
+
+#nav-bar {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 3;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    justify-content: center;
+}
+
+.nav-link {
+    display: inline-block;
+    margin: auto;
+    padding: 20px 30px 20px 30px;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 280px;
+    max-width: 600px;
+    padding: 35px 15px;
+    width: 70%;
+        
+}
+
+#email {
+    font-family: inherit;
+    margin: 5px 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#submit {
+    background-color:#ff5b62;
+    color: #FFF;
+    font-family: inherit;
+    border: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.feat {
+    list-style-type: none;
+}
+
+#containerr {
+    width: 60%;   
+    margin: auto;
+}
+#features {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 4fr;
+    /* grid-template-rows: 1fr 2fr 1fr 2fr 1fr 2fr ; */
+    grid-template-areas:"img1 title1" 
+                        "img1 content1"
+                        "img2 title2" 
+                        "img2 content2"
+                        "img3 title3" 
+                        "img3 content3";
+    margin: 20px;
+    padding: 5px;
+}    
+
+#img1 {
+    grid-area: img1;
+    align-content: center;
+}
+#img2 {
+    grid-area: img2;
+}
+#img3 {
+    grid-area: img3;
+}
+#title1 {
+    grid-area: title1;
+}
+#title2 {
+    grid-area: title2;
+}
+#title3 {
+    grid-area: title3;
+}
+#feat1 {
+    grid-area: content1;
+}
+#feat2 {
+    grid-area: content2;
+}
+#feat3 {
+    grid-area: content3;
+}
+
+#how-it-works {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+  }
+
+#img1, #img2, #img3 {
+    margin: auto;
+    color: #ff5b62;
+}
+.titles {
+    color: #ff5b62;
+    font-size: 20px;
+    font-weight: bolder;
+    
+}
+#pricing {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /*grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:"title title title" 
+                        " basic advanced premium";*/
+    margin-top: 65px;
+    width: 60%;
+    max-width: 626px;
+    margin: auto;
+    
+}
+#pricing > .serv-types {
+    margin: auto;
+}
+
+#pricing > .serv-types > .level{
+    margin-left: auto;
+ 
+
+}
+.btn {
+    
+    font-size: 1em;
+    text-transform: uppercase;
+    color: whitesmoke;
+    border-radius: 1px;
+    background: #ff5b62;
+    cursor: pointer;
+    margin-left: 26%;
+    margin-bottom: 5px;
+    
+}
+#pricing-title{
+    padding-top: 2em;
+    padding-bottom: 1em;
+    font-size: 2em;
+    font-weight: bold;
+    color: #ff5b62;
+    flex: 100%;
+    justify-content: center;
+        
+ }
+.pricetag {
+    font-size: 1.5em;
+    font-weight: bolder;
+    padding-top: 5px;
+}
+.serv-types {
+    justify-content: center;
+    border-style: solid;
+    margin: 10px;
+    border: 1px solid #000;
+    border-radius: 3px;
+  }
+}

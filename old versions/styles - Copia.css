@@ -1,0 +1,42 @@
+#header {
+    border: cadetblue;
+    border-style: solid;
+    display: flex;
+    flex-flow: row wrap;
+
+    justify-content: space-around;
+    background-color: blanchedalmond;
+    position: relative;
+    align-items: stretch;
+    min-height: 75px;
+    padding: 0px 20px;
+    
+}
+.site-logo{
+   flex: 1;
+}
+#header-img {
+    width: 25%;
+}
+#nav-list {
+     
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+    
+
+        
+}
+#nav-list li {
+    display: inline;
+    text-align: center;
+  
+  
+    
+    
+}
+
